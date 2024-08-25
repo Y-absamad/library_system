@@ -1,8 +1,7 @@
-#include "User.h"
-#include "Book.h"
-#include "UserList.h"
-#include "BookList.h"
-#include <limits>
+#include "User.cpp"
+#include "Book.cpp"
+#include "UserList.cpp"
+#include "BookList.cpp"
 using namespace std;
 
 UserList *U;
@@ -140,7 +139,7 @@ int intgerNumber(string value)
     {
         cout << "Please enter a " << value << ": ";
         cin.clear();
-        cin.ignore(numeric_limits<streamsize>::max(), '\n');
+        cin.ignore();
     }
     return choice;
 }
@@ -253,7 +252,7 @@ void searchByName(BookList *B, bool &b7)
 {
     string name;
     cout << "Enter name for search : ";
-    cin.ignore(numeric_limits<streamsize>::max(), '\n');
+    cin.ignore();
     getline(cin, name);
     Book *BookAfterUpdate;
     BookAfterUpdate = B->searchBook(name);
@@ -341,7 +340,7 @@ void updateTitle(Book *BookAfterUpdate)
 {
     string NewTitle;
     cout << "Enter new title : ";
-    cin.ignore(numeric_limits<streamsize>::max(), '\n');
+    cin.ignore();
     getline(cin, NewTitle);
     Book *BookAfterUpdateTitle;
     BookAfterUpdateTitle = BookAfterUpdate;
@@ -352,7 +351,7 @@ void UpdateCategory(Book *BookAfterUpdate)
 {
     string NewCategory;
     cout << "Enter new category : ";
-    cin.ignore(numeric_limits<streamsize>::max(), '\n');
+    cin.ignore();
     getline(cin, NewCategory);
     Book *BookAfterUpdateCategory;
     BookAfterUpdateCategory = BookAfterUpdate;
@@ -445,7 +444,7 @@ void searchUserByName(UserList *U, bool &b)
 {
     string name;
     cout << "Enter name for search : ";
-    cin.ignore(numeric_limits<streamsize>::max(), '\n');
+    cin.ignore();
     getline(cin, name);
     User *userAfterUpdate;
     userAfterUpdate = U->searchUser(name);
@@ -511,7 +510,7 @@ void updateName(User *userAfterUpdate)
 {
     string NewName;
     cout << "Enter new name : ";
-    cin.ignore(numeric_limits<streamsize>::max(), '\n');
+    cin.ignore();
     getline(cin, NewName);
     User *userAfterUpdateName;
     userAfterUpdateName = userAfterUpdate;
@@ -526,7 +525,7 @@ void UpdateAge(User *userAfterUpdate)
     {
         cout << "Please enter a number for age.\nAge : ";
         cin.clear();
-        cin.ignore(numeric_limits<streamsize>::max(), '\n');
+        cin.ignore();
     }
     User *userAfterUpdateAge;
     userAfterUpdateAge = userAfterUpdate;
@@ -545,7 +544,7 @@ void updateEmail(User *userAfterUpdate)
 {
     string NewEmail;
     cout << "Enter new eamil : ";
-    cin.ignore(numeric_limits<streamsize>::max(), '\n');
+    cin.ignore();
     getline(cin, NewEmail);
     User *userAfterUpdateEmail;
     userAfterUpdateEmail = userAfterUpdate;
