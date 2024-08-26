@@ -1,3 +1,5 @@
+#ifndef BOOKLIST_H
+#define BOOKLIST_H
 #include <iostream>
 using namespace std;
 class BookList
@@ -17,3 +19,4 @@ public:
     void deleteBook(int);
     Book &operator[](int);
 };
+#endif

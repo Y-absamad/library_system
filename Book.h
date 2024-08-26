@@ -1,3 +1,5 @@
+#ifndef BOKK_H
+#define BOOK_H
 #include <iostream>
 #include <string>
 using namespace std;
@@ -37,3 +39,4 @@ public:
     friend istream &operator>>(istream &input, Book &book);
     friend ostream &operator<<(ostream &output, const Book &book);
 };
+#endif

@@ -1,3 +1,5 @@
+#ifndef USER_H
+#define USER_H
 #include<iostream>
 #include<string>
 using namespace std;
@@ -29,3 +31,4 @@ public:
     friend istream&operator>>(istream &input ,User &user);
 };
 
+#endif

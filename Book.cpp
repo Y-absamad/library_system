@@ -1,5 +1,5 @@
 #include "Book.h"
-//#include"User.h"
+#include"User.h"
 #include <limits>
 
 int Book::count = 0;
@@ -140,8 +140,8 @@ ostream &operator<<(ostream &output, const Book &book)
            << "title        : " << book.getTitle() << "\n"
            << "isbn         : " << book.getIsbn() << "\n"
            << "id           : " << book.getId() << "\n"
-           << "category     : " << book.getCategory() << "\n";
-           //<< "avergeRating : " << book.getAverageRating() << "\n";
+           << "category     : " << book.getCategory() << "\n"
+           << "avergeRating : " << book.getAverageRating() << "\n";
     if (!book.getAuthor().getName().empty())
         output << "author       : " << book.getAuthor().getName() << "\n";
     output << "****************************\n";

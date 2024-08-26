@@ -1,5 +1,6 @@
-#include <iostream>
-#include <string>
+#ifndef USERLIST_H
+#define USERLIST_H
+#include"User.h"
 
 using namespace std;
 class UserList
@@ -19,3 +20,4 @@ public:
     User *searchUser(int);
     friend ostream &operator<<(ostream &, const UserList &);
 };
+#endif
